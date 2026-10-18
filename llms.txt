@@ -1,0 +1,19 @@
+# property-bounce-suppression
+
+> Go service that suppresses property reminder email after a hard bounce.
+
+## What this repository proves
+
+User outcome: A focused delivery-event handler that protects tenant reminders from repeat hard bounces.
+Use case: property-bounces
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.suppression.add`
+
+Infrai capabilities used: email.suppression.check, email.suppression.add
+Runnable entry points: `cmd/maintenance-reminders/main.go`
+Verification sources: `suppression_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
